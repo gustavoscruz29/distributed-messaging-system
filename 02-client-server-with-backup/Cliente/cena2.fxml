@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ControllerCliente"
+            prefWidth="800" prefHeight="500">
+
+    <!-- Lista de grupos à esquerda -->
+    <left>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Grupos" />
+            <ListView fx:id="listaGrupos" prefWidth="150" />
+            <TextField fx:id="campoGrupo" promptText="Nome do grupo" />
+            <Button fx:id="botaoCriarEntrar" text="Criar/Entrar" />
+            <Button fx:id="botaoSair" text="Sair do Grupo" />
+        </VBox>
+    </left>
+
+    <!-- Área principal de mensagens -->
+    <center>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <Label text="Mensagens" />
+            <TextArea fx:id="areaMensagens" editable="false" wrapText="true" prefHeight="400" />
+            <HBox spacing="10">
+                <padding>
+                    <Insets top="10" right="10" bottom="10" left="10"/>
+                </padding>
+                <TextField fx:id="campoMensagem" HBox.hgrow="ALWAYS" promptText="Digite uma mensagem..." />
+                <Button fx:id="botaoEnviar" text="Enviar" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

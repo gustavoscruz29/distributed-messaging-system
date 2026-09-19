@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="ControllerCena1"
+      spacing="10" alignment="CENTER" prefWidth="300" prefHeight="200">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Digite seu nome:" />
+    <TextField fx:id="campoNome" promptText="Seu nome"/>
+
+    <Label text="IP do Servidor:" />
+    <TextField fx:id="campoIP" promptText="Ex: 127.0.0.1"/>
+
+    <Button fx:id="botaoEntrar" text="Entrar" />
+</VBox>
